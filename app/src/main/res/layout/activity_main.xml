@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/ivSatellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_satellite_24" />
+
+    <TextView
+        android:id="@+id/tvSpaceStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivSatellite"
+        android:layout_marginLeft="60dp"
+        android:text="Space Stations"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_flight_24"
+        android:layout_toRightOf="@+id/ivSatellite"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:textStyle="bold"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/tvFlights"
+        android:layout_below="@+id/ivFlights"
+        android:layout_toRightOf="@+id/tvSpaceStation"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/ivCars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ivFlights"
+        android:src="@drawable/ic_baseline_directions_car_24" />
+
+    <TextView
+        android:id="@+id/tvcars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cars"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivCars"
+        android:layout_toRightOf="@+id/tvFlights"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpaceStation"
+        android:text="@string/dca"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:padding="50dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/tvDCA"
+        android:layout_marginStart="40dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvMARS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpaceStation"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/tvDCA"
+        android:background="@color/black"
+        android:layout_marginStart="20dp"
+        android:padding="50dp"
+        android:text="@string/mars"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivFlights"
+        android:layout_marginLeft="-15dp"
+        android:background="@color/white"
+        android:layout_marginTop="105dp"
+        android:layout_toRightOf="@+id/tvDCA"
+        app:srcCompat="@drawable/ic_baseline_compare_arrows_24" />
+
+    <Switch
+        android:id="@+id/swOneWay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDCA"
+        android:layout_marginTop="20dp"
+        android:text="One Way"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/brown"
+        android:layout_marginLeft="20dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Traveller"
+        android:layout_below="@+id/swOneWay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/brown"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+</RelativeLayout>
